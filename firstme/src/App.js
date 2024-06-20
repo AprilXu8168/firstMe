@@ -13,12 +13,12 @@ class App extends React.Component{
     .then(res=>this.setState({apiResponse:res}))
   }
 
-  componentWillUnmount(){
+  componentWillMount(){
     this.callAPI()
   }
 
-  render() {
-    return (
+render() {
+  return (
     <div className="App">
       <header className="App-header">
           <p>
@@ -26,8 +26,8 @@ class App extends React.Component{
           </p>
       </header>
     </div>
-    );
-  }
+  );
+}
 }
 
 export default App;
